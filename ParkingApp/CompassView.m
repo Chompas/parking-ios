@@ -74,16 +74,14 @@ static const int kBackgroundOffset = 2;
     center = CGPointMake(CGRectGetWidth(rect) / 2, CGRectGetHeight(rect) / 2);
     width = CGRectGetWidth(rect), height = CGRectGetHeight(rect);
     
-    // create colors from scheme.
-    NSArray *colors = [_schemeColor colorSchemeOfType:ColorSchemeAnalagous];
+    UIColor *sgColor = [UIColor colorWithRed:29/255.0 green:220/255.0 blue:148/255.0 alpha:1];
     
     // draw.
-    [self drawCompassBackground:rect withColor:[colors objectAtIndex:2]];
     [self drawArrowBackground:rect];
     [self drawArrow:rect fromCenter:center.x - (center.x * kCenterOffset) + kBackgroundOffset
-          withColor:[colors objectAtIndex:0]];
+          withColor:sgColor];
     [self drawArrow:rect fromCenter:center.x + (center.x * kCenterOffset) - kBackgroundOffset
-          withColor:[colors objectAtIndex:1]];
+          withColor:sgColor];
     
     // compass dark circle.
     CGContextAddArc(ctx, center.x, center.y, center.x * kCenterOffset * .55, 0, 30, 0);

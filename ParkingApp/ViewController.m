@@ -43,85 +43,6 @@
 	[locationManager startUpdatingHeading];
 }
 
-- (void)updateRow:(ParkingCell *)cell atPosition:(NSInteger)row
-                                withPrimaryGradient:(NSArray *)aPrimaryGradient
-                                andSecondaryGradient:(NSArray *)aSecondaryGradient
-{
-    // primary colors.
-    [cell setPrimaryColor:[aPrimaryGradient objectAtIndex:row]
-        andSecondaryColor:[aSecondaryGradient objectAtIndex:row]];
-    cell.backgroundColor = [aPrimaryGradient objectAtIndex:row];
-    
-    // secondary colors.
-    cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.bounds];
-    cell.selectedBackgroundView.backgroundColor = [aSecondaryGradient objectAtIndex:row];
-}
-
-- (void)performRowsAnimation
-{
-    NSIndexPath *indexPath = [_tableView indexPathForSelectedRow];
-    
-    // generate temporary secondary colors to keep animation consistent.
-    NSArray *tmpSecondaryColors = [ColorUtils generateGradientColorsAndExclude:secondaryColors];
-    NSArray *tmpSecondaryGradient = [ColorUtils generateGradientFromColor:[tmpSecondaryColors objectAtIndex:0]
-                                                                  toColor:[tmpSecondaryColors objectAtIndex:1]
-                                                                withSteps:[parkings count]];
-    
-    // set new color for selected row, and remove selection inmediately.
-    ParkingCell *selectedCell = (ParkingCell *)[_tableView cellForRowAtIndexPath:indexPath];
-    [self updateRow:selectedCell atPosition:indexPath.row - 1
-                        withPrimaryGradient:secondaryGradient
-                       andSecondaryGradient:tmpSecondaryGradient];
-    [_tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
-    // make animation on group of two rows on opposite sides.
-    float delay = 0; int i = 1;
-    BOOL hasMoreGroupsToAnimate = YES;
-    while (hasMoreGroupsToAnimate) {
-        
-        // top row.
-        ParkingCell *topCell = nil;
-        if (indexPath.row - i > -1) {
-            NSIndexPath *idx = [NSIndexPath indexPathForRow:indexPath.row - i inSection:indexPath.section];
-            topCell = (ParkingCell *)[_tableView cellForRowAtIndexPath:idx];
-        }
-        
-        // top row.
-        ParkingCell *bottomCell = nil;
-        if (indexPath.row + i < [parkings count] + 1) {
-            NSIndexPath *idx = [NSIndexPath indexPathForRow:indexPath.row + i inSection:indexPath.section];
-            bottomCell = (ParkingCell *)[_tableView cellForRowAtIndexPath:idx];
-        }
-        
-        // run animation for current group.
-        [UIView animateWithDuration:0.5
-                              delay:delay
-                            options:UIViewAnimationOptionBeginFromCurrentState|UIViewAnimationOptionCurveEaseOut
-                         animations:^{
-                             if (topCell != nil) {
-                                 [self updateRow:topCell atPosition:indexPath.row - 1 - i
-                                                withPrimaryGradient:secondaryGradient
-                                               andSecondaryGradient:tmpSecondaryGradient];
-                             }
-                             
-                             if (bottomCell != nil) {
-                                 [self updateRow:bottomCell atPosition:indexPath.row - 1 + i
-                                                   withPrimaryGradient:secondaryGradient
-                                                  andSecondaryGradient:tmpSecondaryGradient];
-                             }
-                         }
-                         completion:nil];
-        delay+=.1;
-        i++; hasMoreGroupsToAnimate = topCell != nil || bottomCell != nil;
-    }
-    
-    // swap colors.
-    primaryGradient = secondaryGradient;
-    
-    secondaryColors = tmpSecondaryColors;
-    secondaryGradient = tmpSecondaryGradient;
-}
-
 
 #pragma mark - UIViewController
 
@@ -129,7 +50,7 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"Parkings...";
+    self.navigationItem.title = @"Estacionamientos";
     
     parkings = [NSArray array];
     
@@ -144,11 +65,6 @@
     _tableView.separatorColor = [UIColor blackColor];
     
     [self startUpdatingLocation];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    if ([parkings count] > 0) [self performRowsAnimation];
 }
 
 - (void)didReceiveMemoryWarning
@@ -191,11 +107,6 @@
         parkingCell.parking = [parkings objectAtIndex:row];
         parkingCell.location = location;
         parkingCell.heading = heading;
-        
-        // update colors.
-        [self updateRow:parkingCell atPosition:row
-                         withPrimaryGradient:primaryGradient
-                        andSecondaryGradient:secondaryGradient];
         
         cell = parkingCell;
     }
@@ -260,17 +171,6 @@
         
         return d1 < d2 ? NSOrderedAscending : d1 > d2 ? NSOrderedDescending : NSOrderedSame;
     }];
-    
-    // generate random gradient using ios7 theme.
-    NSArray *primaryColors = [ColorUtils generateGradientColors];
-    primaryGradient = [ColorUtils generateGradientFromColor:[primaryColors objectAtIndex:0]
-                                                         toColor:[primaryColors objectAtIndex:1]
-                                                       withSteps:[parkings count]];
-    
-    secondaryColors = [ColorUtils generateGradientColorsAndExclude:primaryColors];
-    secondaryGradient = [ColorUtils generateGradientFromColor:[secondaryColors objectAtIndex:0]
-                                                           toColor:[secondaryColors objectAtIndex:1]
-                                                         withSteps:[parkings count]];
     
     // we're done.
     [_activityIndicator stopAnimating];
