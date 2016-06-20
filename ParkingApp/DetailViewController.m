@@ -9,6 +9,8 @@
 #import "DetailViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "Colours.h"
+#import "BookingService.h"
+#import "BookingViewController.h"
 
 @implementation DetailViewController
 
@@ -48,6 +50,19 @@
     [_mapView addAnnotation:annotation];
     [_mapView selectAnnotation:annotation animated:YES];
     
+    CLLocationDistance distance = [_location distanceFromLocation:[_parking location]];
+    if (distance > 999) {
+        __distanceLabel.text = [NSString stringWithFormat:@"A %.1f KM", distance / 1000];
+    } else {
+        __distanceLabel.text = [NSString stringWithFormat:@"A %d MTS", (int) distance];
+    }
+    
+    __nameLabel.text = _parking.name;
+    __priceLabel.text = [NSString stringWithFormat:@"$%@/hora", _parking.price];
+    __addressLabel.text = _parking.address;
+    __occupancyLabel.text = [NSString stringWithFormat:@"%i", _parking.occupancy];
+    __timeLabel.text = [NSString stringWithFormat:@"HORARIO: %@", _parking.hours];
+    
     [self updateMapViewRegion];
 }
 
@@ -55,6 +70,40 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - IBAction
+
+- (IBAction)bookParking:(id)sender {
+    [[[BookingService alloc] initWithDelegate:self] bookParking:_parking];
+}
+
+
+#pragma mark - ParkingAvailabilityServiceDelegate
+
+- (void)didBookParking:(Parking *)parking
+{
+    [self performSegueWithIdentifier: @"bookSegue" sender: self];
+}
+
+- (void)didFailBookingParking
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sorry :("
+                                                                   message:@"No more availability"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    [self presentViewController:alert animated:YES completion:nil];
+    NSLog(@"Unable to book parking, something is wrong.");
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"bookSegue"]){
+        BookingViewController *vc = [segue destinationViewController];
+        [vc setParking:_parking];
+    }
+    
 }
 
 @end

@@ -164,7 +164,7 @@
                                                       userInfo:info];
 }
 
-#pragma mark - HotelAvailabilityServiceDelegate
+#pragma mark - ParkingAvailabilityServiceDelegate
 
 - (void)didLoadParkings:(NSArray *)parkingList
 {

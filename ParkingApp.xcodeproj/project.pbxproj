@@ -38,6 +38,9 @@
 		A8D852C91D1845BE004B287D /* Parking.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D852C81D1845BE004B287D /* Parking.m */; };
 		A8D852CC1D1848C9004B287D /* ParkingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D852CB1D1848C9004B287D /* ParkingCell.m */; };
 		A8D852CE1D186BC0004B287D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D852CD1D186BC0004B287D /* Launch Screen.storyboard */; };
+		A8F4518B1D1892A700EED56B /* BookingService.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F4518A1D1892A700EED56B /* BookingService.m */; };
+		A8F4518E1D189B7B00EED56B /* BookingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F4518D1D189B7B00EED56B /* BookingViewController.m */; };
+		A8F451901D18ADA800EED56B /* map-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F4518F1D18ADA800EED56B /* map-icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,11 @@
 		A8D852CA1D1848C9004B287D /* ParkingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingCell.h; sourceTree = "<group>"; };
 		A8D852CB1D1848C9004B287D /* ParkingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingCell.m; sourceTree = "<group>"; };
 		A8D852CD1D186BC0004B287D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A8F451891D1892A700EED56B /* BookingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingService.h; sourceTree = "<group>"; };
+		A8F4518A1D1892A700EED56B /* BookingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingService.m; sourceTree = "<group>"; };
+		A8F4518C1D189B7B00EED56B /* BookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingViewController.h; sourceTree = "<group>"; };
+		A8F4518D1D189B7B00EED56B /* BookingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingViewController.m; sourceTree = "<group>"; };
+		A8F4518F1D18ADA800EED56B /* map-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-icon@2x.png"; sourceTree = "<group>"; };
 		E4F120BBC0F0E16BFDDC03D6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				061F173918934437003A0C14 /* ParkingApp */,
-				061F175818934437003A0C14 /* HotelCompassTests */,
+				061F175818934437003A0C14 /* ParkingAppTests */,
 				061F173218934437003A0C14 /* Frameworks */,
 				061F173118934437003A0C14 /* Products */,
 				D9A2EC8950031495C51CDDE6 /* Pods */,
@@ -190,17 +198,19 @@
 				061F174118934437003A0C14 /* ParkingApp-Prefix.pch */,
 				06336BAE18ADA483001CA042 /* Icon.png */,
 				06336BAF18ADA483001CA042 /* Icon@2x.png */,
+				A8F4518F1D18ADA800EED56B /* map-icon@2x.png */,
 				06453E3E18ADB0A000C52D1F /* nyan_cat.gif */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		061F175818934437003A0C14 /* HotelCompassTests */ = {
+		061F175818934437003A0C14 /* ParkingAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				061F175E18934437003A0C14 /* HotelCompassTests.m */,
 				061F175918934437003A0C14 /* Supporting Files */,
 			);
+			name = ParkingAppTests;
 			path = HotelCompassTests;
 			sourceTree = "<group>";
 		};
@@ -220,6 +230,8 @@
 				061F174918934437003A0C14 /* ViewController.m */,
 				06336BA518AD47DD001CA042 /* DetailViewController.h */,
 				06336BA618AD47DD001CA042 /* DetailViewController.m */,
+				A8F4518C1D189B7B00EED56B /* BookingViewController.h */,
+				A8F4518D1D189B7B00EED56B /* BookingViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -242,6 +254,8 @@
 			children = (
 				A8D852C11D18411C004B287D /* ParkingService.h */,
 				A8D852C21D18411C004B287D /* ParkingService.m */,
+				A8F451891D1892A700EED56B /* BookingService.h */,
+				A8F4518A1D1892A700EED56B /* BookingService.m */,
 			);
 			name = api;
 			sourceTree = "<group>";
@@ -356,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F451901D18ADA800EED56B /* map-icon@2x.png in Resources */,
 				06336BB018ADA483001CA042 /* Icon.png in Resources */,
 				061F174C18934437003A0C14 /* Images.xcassets in Resources */,
 				061F173E18934437003A0C14 /* InfoPlist.strings in Resources */,
@@ -436,8 +451,10 @@
 				069F16E91895714000ED0E4A /* BaseJSONModel.m in Sources */,
 				A8D852C31D18411C004B287D /* ParkingService.m in Sources */,
 				061F174018934437003A0C14 /* main.m in Sources */,
+				A8F4518B1D1892A700EED56B /* BookingService.m in Sources */,
 				A8D852C61D184573004B287D /* AvailableParkings.m in Sources */,
 				A8D852C91D1845BE004B287D /* Parking.m in Sources */,
+				A8F4518E1D189B7B00EED56B /* BookingViewController.m in Sources */,
 				061F176D1893473C003A0C14 /* CompassView.m in Sources */,
 				060F521B18AF0905004FC603 /* NyanView.m in Sources */,
 				06336BA718AD47DD001CA042 /* DetailViewController.m in Sources */,

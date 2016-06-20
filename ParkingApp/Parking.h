@@ -15,6 +15,7 @@
 
 - (CLLocation *)location;
 
+@property(nonatomic, strong) NSString *_id;
 @property(nonatomic, strong) NSString *name;
 @property(nonatomic, strong) NSString *neighborhood;
 @property(nonatomic, strong) NSString *address;

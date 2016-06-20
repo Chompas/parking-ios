@@ -7,7 +7,7 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
-#import "AvailableParkings.h"
+#import "Parking.h"
 
 @protocol ParkingServiceDelegate <NSObject>
 
@@ -15,7 +15,6 @@
 - (void)didLoadParkings:(NSArray<Parking *> *)parkings;
 - (void)didFailLoadingParkings;
 @end
-
 
 @interface ParkingService : AFHTTPRequestOperationManager
 

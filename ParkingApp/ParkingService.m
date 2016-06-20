@@ -39,8 +39,6 @@ static NSString * const kBaseURL = @"http://localhost:3000";
     // callbacks.
     void (^success)(AFHTTPRequestOperation *operation, id responseObject) =
     ^(AFHTTPRequestOperation *operation, id responseObject) {
-        //NSString *response = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        //AvailableParkings *parkings = [[AvailableParkings alloc] initWithString:response error:nil];
         NSMutableArray *parkingArray = [[NSMutableArray alloc] init];
         for (NSDictionary *parkingDict in responseObject) {
             NSError *error;
