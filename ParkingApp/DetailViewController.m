@@ -36,8 +36,7 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"More Information";
-    self.navigationController.navigationBar.tintColor = _primaryColor;
+    self.navigationItem.title = @"Info";
     
     // show location in map.
     CLLocationCoordinate2D location = CLLocationCoordinate2DMake(_parking.lat, _parking.lon);

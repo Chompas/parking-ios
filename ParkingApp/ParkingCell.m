@@ -47,27 +47,6 @@
     }
 }
 
-#pragma mark - Public
-
-- (void)setPrimaryColor:(UIColor *)primaryColor andSecondaryColor:(UIColor *)secondaryColor
-{
-    // primary colors.
-    NSArray *primarySchemeColors = [primaryColor colorSchemeOfType:ColorSchemeMonochromatic];
-    _nameLabel.textColor = [primarySchemeColors objectAtIndex:0];
-    _addressLabel.textColor = [primarySchemeColors objectAtIndex:1];
-    _distanceLabel.textColor = [primarySchemeColors objectAtIndex:3];
-    
-    // highlighted colors.
-    NSArray *secondarySchemeColors = [secondaryColor colorSchemeOfType:ColorSchemeMonochromatic];
-    _nameLabel.highlightedTextColor = [secondarySchemeColors objectAtIndex:0];
-    _addressLabel.highlightedTextColor = [secondarySchemeColors objectAtIndex:1];
-    _distanceLabel.highlightedTextColor = [secondarySchemeColors objectAtIndex:3];
-    
-    // propagate color changes to compass view.
-    _compassView.schemeColor = primaryColor;
-    [_compassView setNeedsDisplay];
-}
-
 #pragma mark - NSObject
 
 - (id)initWithCoder:(NSCoder *)aDecoder

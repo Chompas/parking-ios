@@ -24,6 +24,4 @@ static NSString * const kHeadingUpdatedNotification = @"HEADING_UPDATED_NOTIF";
 @property(nonatomic, strong) CLLocation *location;
 @property(nonatomic, strong) CLHeading *heading;
 
-- (void)setPrimaryColor:(UIColor *)primaryColor andSecondaryColor:(UIColor *)secondaryColor;
-
 @end
