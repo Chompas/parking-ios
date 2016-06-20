@@ -8,6 +8,7 @@
 
 #import "BookingViewController.h"
 #import "QRCodeGenerator.h"
+#import <Mapkit/Mapkit.h>
 
 @implementation BookingViewController
 
@@ -53,6 +54,17 @@
     [alertController addAction:okAction];
     
     [self presentViewController:alertController animated:YES completion:nil];
+}
+
+- (IBAction)mapDirections:(id)sender {
+    
+    CLLocationCoordinate2D coordinate = [_parking location].coordinate;
+    MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coordinate
+                                                   addressDictionary:nil];
+    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
+    [mapItem setName:_parking.name];
+    // Pass the map item to the Maps app
+    [mapItem openInMapsWithLaunchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving}];
 }
 
 @end

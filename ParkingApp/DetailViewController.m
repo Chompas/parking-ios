@@ -75,7 +75,31 @@
 #pragma mark - IBAction
 
 - (IBAction)bookParking:(id)sender {
-    [[[BookingService alloc] initWithDelegate:self] bookParking:_parking];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Realizar Reserva"
+                                                                             message:@"Desea realizar la reserva?"
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:NSLocalizedString(@"Cancelar", @"Cancel action")
+                                   style:UIAlertActionStyleCancel
+                                   handler:^(UIAlertAction *action)
+                                   {
+                                       NSLog(@"Cancel action");
+                                   }];
+    
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:NSLocalizedString(@"Reservar", @"OK action")
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action)
+                               {
+                                   NSLog(@"OK action");
+                                   [[[BookingService alloc] initWithDelegate:self] bookParking:_parking];
+                               }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 
@@ -83,6 +107,9 @@
 
 - (void)didBookParking:(Parking *)parking
 {
+    _parking.occupancy--;
+    __occupancyLabel.text = [NSString stringWithFormat:@"%i", _parking.occupancy];
+    
     [self performSegueWithIdentifier: @"bookSegue" sender: self];
 }
 
