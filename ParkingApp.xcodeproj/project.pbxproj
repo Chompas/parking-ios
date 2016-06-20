@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060F521B18AF0905004FC603 /* NyanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 060F521A18AF0905004FC603 /* NyanView.m */; };
+		061F173418934437003A0C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061F173318934437003A0C14 /* Foundation.framework */; };
+		061F173618934437003A0C14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061F173518934437003A0C14 /* CoreGraphics.framework */; };
+		061F173818934437003A0C14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061F173718934437003A0C14 /* UIKit.framework */; };
+		061F173E18934437003A0C14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 061F173C18934437003A0C14 /* InfoPlist.strings */; };
+		061F174018934437003A0C14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F173F18934437003A0C14 /* main.m */; };
+		061F174418934437003A0C14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F174318934437003A0C14 /* AppDelegate.m */; };
+		061F174718934437003A0C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061F174518934437003A0C14 /* Main.storyboard */; };
+		061F174A18934437003A0C14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F174918934437003A0C14 /* ViewController.m */; };
+		061F174C18934437003A0C14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061F174B18934437003A0C14 /* Images.xcassets */; };
+		061F175318934437003A0C14 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061F175218934437003A0C14 /* XCTest.framework */; };
+		061F175418934437003A0C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061F173318934437003A0C14 /* Foundation.framework */; };
+		061F175518934437003A0C14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061F173718934437003A0C14 /* UIKit.framework */; };
+		061F175D18934437003A0C14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 061F175B18934437003A0C14 /* InfoPlist.strings */; };
+		061F175F18934437003A0C14 /* HotelCompassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F175E18934437003A0C14 /* HotelCompassTests.m */; };
+		061F176D1893473C003A0C14 /* CompassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 061F176C1893473C003A0C14 /* CompassView.m */; };
+		06336BA718AD47DD001CA042 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06336BA618AD47DD001CA042 /* DetailViewController.m */; };
+		06336BA918AD4FC2001CA042 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06336BA818AD4FC2001CA042 /* MapKit.framework */; };
+		06336BB018ADA483001CA042 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 06336BAE18ADA483001CA042 /* Icon.png */; };
+		06336BB118ADA483001CA042 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06336BAF18ADA483001CA042 /* Icon@2x.png */; };
+		06453E3F18ADB0A000C52D1F /* nyan_cat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 06453E3E18ADB0A000C52D1F /* nyan_cat.gif */; };
+		069F16E91895714000ED0E4A /* BaseJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 069F16E81895714000ED0E4A /* BaseJSONModel.m */; };
+		069F16EB18957B8800ED0E4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069F16EA18957B8800ED0E4A /* QuartzCore.framework */; };
+		069F16ED18957B8C00ED0E4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069F16EC18957B8C00ED0E4A /* CoreLocation.framework */; };
+		06E88B0618AABF560060500F /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E88B0518AABF560060500F /* ColorUtils.m */; };
+		9EE3051FFC3447E6AD1E89F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA1D4B22774FC19883C323 /* libPods.a */; };
+		A8D852C31D18411C004B287D /* ParkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D852C21D18411C004B287D /* ParkingService.m */; };
+		A8D852C61D184573004B287D /* AvailableParkings.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D852C51D184573004B287D /* AvailableParkings.m */; };
+		A8D852C91D1845BE004B287D /* Parking.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D852C81D1845BE004B287D /* Parking.m */; };
+		A8D852CC1D1848C9004B287D /* ParkingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D852CB1D1848C9004B287D /* ParkingCell.m */; };
+		A8D852CE1D186BC0004B287D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D852CD1D186BC0004B287D /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		061F175618934437003A0C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 061F172818934437003A0C14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 061F172F18934437003A0C14;
+			remoteInfo = HotelCompass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		060F521918AF0905004FC603 /* NyanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NyanView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		060F521A18AF0905004FC603 /* NyanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NyanView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		061F173018934437003A0C14 /* ParkingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		061F173318934437003A0C14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		061F173518934437003A0C14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		061F173718934437003A0C14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		061F173B18934437003A0C14 /* ParkingApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParkingApp-Info.plist"; sourceTree = "<group>"; };
+		061F173D18934437003A0C14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		061F173F18934437003A0C14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		061F174118934437003A0C14 /* ParkingApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParkingApp-Prefix.pch"; sourceTree = "<group>"; };
+		061F174218934437003A0C14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		061F174318934437003A0C14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		061F174618934437003A0C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		061F174818934437003A0C14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		061F174918934437003A0C14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		061F174B18934437003A0C14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		061F175118934437003A0C14 /* ParkingApp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingApp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		061F175218934437003A0C14 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		061F175A18934437003A0C14 /* ParkingAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParkingAppTests-Info.plist"; sourceTree = "<group>"; };
+		061F175C18934437003A0C14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		061F175E18934437003A0C14 /* HotelCompassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HotelCompassTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		061F176B1893473C003A0C14 /* CompassView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CompassView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		061F176C1893473C003A0C14 /* CompassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CompassView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		06336BA518AD47DD001CA042 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DetailViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		06336BA618AD47DD001CA042 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		06336BA818AD4FC2001CA042 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		06336BAE18ADA483001CA042 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		06336BAF18ADA483001CA042 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		06453E3E18ADB0A000C52D1F /* nyan_cat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = nyan_cat.gif; sourceTree = "<group>"; };
+		069F16E71895714000ED0E4A /* BaseJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BaseJSONModel.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		069F16E81895714000ED0E4A /* BaseJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BaseJSONModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		069F16EA18957B8800ED0E4A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		069F16EC18957B8C00ED0E4A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		06E88B0418AABF560060500F /* ColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ColorUtils.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		06E88B0518AABF560060500F /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ColorUtils.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		3DDA1D4B22774FC19883C323 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3C0CC31FC03D557A4439201 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A8D852C11D18411C004B287D /* ParkingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ParkingService.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A8D852C21D18411C004B287D /* ParkingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ParkingService.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A8D852C41D184573004B287D /* AvailableParkings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableParkings.h; sourceTree = "<group>"; };
+		A8D852C51D184573004B287D /* AvailableParkings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableParkings.m; sourceTree = "<group>"; };
+		A8D852C71D1845BE004B287D /* Parking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parking.h; sourceTree = "<group>"; };
+		A8D852C81D1845BE004B287D /* Parking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parking.m; sourceTree = "<group>"; };
+		A8D852CA1D1848C9004B287D /* ParkingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingCell.h; sourceTree = "<group>"; };
+		A8D852CB1D1848C9004B287D /* ParkingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkingCell.m; sourceTree = "<group>"; };
+		A8D852CD1D186BC0004B287D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E4F120BBC0F0E16BFDDC03D6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		061F172D18934437003A0C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06336BA918AD4FC2001CA042 /* MapKit.framework in Frameworks */,
+				069F16ED18957B8C00ED0E4A /* CoreLocation.framework in Frameworks */,
+				069F16EB18957B8800ED0E4A /* QuartzCore.framework in Frameworks */,
+				061F173618934437003A0C14 /* CoreGraphics.framework in Frameworks */,
+				061F173818934437003A0C14 /* UIKit.framework in Frameworks */,
+				061F173418934437003A0C14 /* Foundation.framework in Frameworks */,
+				9EE3051FFC3447E6AD1E89F9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		061F174E18934437003A0C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061F175318934437003A0C14 /* XCTest.framework in Frameworks */,
+				061F175518934437003A0C14 /* UIKit.framework in Frameworks */,
+				061F175418934437003A0C14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061F172718934437003A0C14 = {
+			isa = PBXGroup;
+			children = (
+				061F173918934437003A0C14 /* ParkingApp */,
+				061F175818934437003A0C14 /* HotelCompassTests */,
+				061F173218934437003A0C14 /* Frameworks */,
+				061F173118934437003A0C14 /* Products */,
+				D9A2EC8950031495C51CDDE6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		061F173118934437003A0C14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				061F173018934437003A0C14 /* ParkingApp.app */,
+				061F175118934437003A0C14 /* ParkingApp.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		061F173218934437003A0C14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06336BA818AD4FC2001CA042 /* MapKit.framework */,
+				069F16EC18957B8C00ED0E4A /* CoreLocation.framework */,
+				069F16EA18957B8800ED0E4A /* QuartzCore.framework */,
+				061F173318934437003A0C14 /* Foundation.framework */,
+				061F173518934437003A0C14 /* CoreGraphics.framework */,
+				061F173718934437003A0C14 /* UIKit.framework */,
+				061F175218934437003A0C14 /* XCTest.framework */,
+				3DDA1D4B22774FC19883C323 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		061F173918934437003A0C14 /* ParkingApp */ = {
+			isa = PBXGroup;
+			children = (
+				06E88B0318AABF2F0060500F /* util */,
+				06734CF3189436F70092EADB /* dto */,
+				06734CE0189423110092EADB /* api */,
+				06734CDF18941F030092EADB /* views */,
+				06734CDE18941EE40092EADB /* controllers */,
+				061F174218934437003A0C14 /* AppDelegate.h */,
+				061F174318934437003A0C14 /* AppDelegate.m */,
+				061F174518934437003A0C14 /* Main.storyboard */,
+				A8D852CD1D186BC0004B287D /* Launch Screen.storyboard */,
+				061F174B18934437003A0C14 /* Images.xcassets */,
+				061F173A18934437003A0C14 /* Supporting Files */,
+			);
+			path = ParkingApp;
+			sourceTree = "<group>";
+		};
+		061F173A18934437003A0C14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				061F173B18934437003A0C14 /* ParkingApp-Info.plist */,
+				061F173C18934437003A0C14 /* InfoPlist.strings */,
+				061F173F18934437003A0C14 /* main.m */,
+				061F174118934437003A0C14 /* ParkingApp-Prefix.pch */,
+				06336BAE18ADA483001CA042 /* Icon.png */,
+				06336BAF18ADA483001CA042 /* Icon@2x.png */,
+				06453E3E18ADB0A000C52D1F /* nyan_cat.gif */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		061F175818934437003A0C14 /* HotelCompassTests */ = {
+			isa = PBXGroup;
+			children = (
+				061F175E18934437003A0C14 /* HotelCompassTests.m */,
+				061F175918934437003A0C14 /* Supporting Files */,
+			);
+			path = HotelCompassTests;
+			sourceTree = "<group>";
+		};
+		061F175918934437003A0C14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				061F175A18934437003A0C14 /* ParkingAppTests-Info.plist */,
+				061F175B18934437003A0C14 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06734CDE18941EE40092EADB /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				061F174818934437003A0C14 /* ViewController.h */,
+				061F174918934437003A0C14 /* ViewController.m */,
+				06336BA518AD47DD001CA042 /* DetailViewController.h */,
+				06336BA618AD47DD001CA042 /* DetailViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		06734CDF18941F030092EADB /* views */ = {
+			isa = PBXGroup;
+			children = (
+				061F176B1893473C003A0C14 /* CompassView.h */,
+				061F176C1893473C003A0C14 /* CompassView.m */,
+				060F521918AF0905004FC603 /* NyanView.h */,
+				060F521A18AF0905004FC603 /* NyanView.m */,
+				A8D852CA1D1848C9004B287D /* ParkingCell.h */,
+				A8D852CB1D1848C9004B287D /* ParkingCell.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		06734CE0189423110092EADB /* api */ = {
+			isa = PBXGroup;
+			children = (
+				A8D852C11D18411C004B287D /* ParkingService.h */,
+				A8D852C21D18411C004B287D /* ParkingService.m */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		06734CF3189436F70092EADB /* dto */ = {
+			isa = PBXGroup;
+			children = (
+				069F16E71895714000ED0E4A /* BaseJSONModel.h */,
+				069F16E81895714000ED0E4A /* BaseJSONModel.m */,
+				A8D852C41D184573004B287D /* AvailableParkings.h */,
+				A8D852C51D184573004B287D /* AvailableParkings.m */,
+				A8D852C71D1845BE004B287D /* Parking.h */,
+				A8D852C81D1845BE004B287D /* Parking.m */,
+			);
+			name = dto;
+			sourceTree = "<group>";
+		};
+		06E88B0318AABF2F0060500F /* util */ = {
+			isa = PBXGroup;
+			children = (
+				06E88B0418AABF560060500F /* ColorUtils.h */,
+				06E88B0518AABF560060500F /* ColorUtils.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		D9A2EC8950031495C51CDDE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3C0CC31FC03D557A4439201 /* Pods.debug.xcconfig */,
+				E4F120BBC0F0E16BFDDC03D6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		061F172F18934437003A0C14 /* ParkingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061F176218934437003A0C14 /* Build configuration list for PBXNativeTarget "ParkingApp" */;
+			buildPhases = (
+				9CC8BF5A837D4123B1F30282 /* Check Pods Manifest.lock */,
+				061F172C18934437003A0C14 /* Sources */,
+				061F172D18934437003A0C14 /* Frameworks */,
+				061F172E18934437003A0C14 /* Resources */,
+				CB20AABEB68D4CA79F904E62 /* Copy Pods Resources */,
+				EDA28D7E731A5D32330C4F48 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParkingApp;
+			productName = HotelCompass;
+			productReference = 061F173018934437003A0C14 /* ParkingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		061F175018934437003A0C14 /* ParkingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061F176518934437003A0C14 /* Build configuration list for PBXNativeTarget "ParkingAppTests" */;
+			buildPhases = (
+				061F174D18934437003A0C14 /* Sources */,
+				061F174E18934437003A0C14 /* Frameworks */,
+				061F174F18934437003A0C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				061F175718934437003A0C14 /* PBXTargetDependency */,
+			);
+			name = ParkingAppTests;
+			productName = HotelCompassTests;
+			productReference = 061F175118934437003A0C14 /* ParkingApp.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		061F172818934437003A0C14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Emiliano Viscarra";
+				TargetAttributes = {
+					061F175018934437003A0C14 = {
+						TestTargetID = 061F172F18934437003A0C14;
+					};
+				};
+			};
+			buildConfigurationList = 061F172B18934437003A0C14 /* Build configuration list for PBXProject "ParkingApp" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 061F172718934437003A0C14;
+			productRefGroup = 061F173118934437003A0C14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				061F172F18934437003A0C14 /* ParkingApp */,
+				061F175018934437003A0C14 /* ParkingAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		061F172E18934437003A0C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06336BB018ADA483001CA042 /* Icon.png in Resources */,
+				061F174C18934437003A0C14 /* Images.xcassets in Resources */,
+				061F173E18934437003A0C14 /* InfoPlist.strings in Resources */,
+				06453E3F18ADB0A000C52D1F /* nyan_cat.gif in Resources */,
+				061F174718934437003A0C14 /* Main.storyboard in Resources */,
+				06336BB118ADA483001CA042 /* Icon@2x.png in Resources */,
+				A8D852CE1D186BC0004B287D /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		061F174F18934437003A0C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061F175D18934437003A0C14 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CC8BF5A837D4123B1F30282 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB20AABEB68D4CA79F904E62 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA28D7E731A5D32330C4F48 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		061F172C18934437003A0C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061F174A18934437003A0C14 /* ViewController.m in Sources */,
+				A8D852CC1D1848C9004B287D /* ParkingCell.m in Sources */,
+				061F174418934437003A0C14 /* AppDelegate.m in Sources */,
+				06E88B0618AABF560060500F /* ColorUtils.m in Sources */,
+				069F16E91895714000ED0E4A /* BaseJSONModel.m in Sources */,
+				A8D852C31D18411C004B287D /* ParkingService.m in Sources */,
+				061F174018934437003A0C14 /* main.m in Sources */,
+				A8D852C61D184573004B287D /* AvailableParkings.m in Sources */,
+				A8D852C91D1845BE004B287D /* Parking.m in Sources */,
+				061F176D1893473C003A0C14 /* CompassView.m in Sources */,
+				060F521B18AF0905004FC603 /* NyanView.m in Sources */,
+				06336BA718AD47DD001CA042 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		061F174D18934437003A0C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061F175F18934437003A0C14 /* HotelCompassTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		061F175718934437003A0C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 061F172F18934437003A0C14 /* ParkingApp */;
+			targetProxy = 061F175618934437003A0C14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		061F173C18934437003A0C14 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				061F173D18934437003A0C14 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		061F174518934437003A0C14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				061F174618934437003A0C14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		061F175B18934437003A0C14 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				061F175C18934437003A0C14 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		061F176018934437003A0C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "ParkingApp/ParkingApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ParkingApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ParkingApp;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		061F176118934437003A0C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = "ParkingApp/ParkingApp-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ParkingApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ParkingApp;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		061F176318934437003A0C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C0CC31FC03D557A4439201 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkingApp/ParkingApp-Prefix.pch";
+				INFOPLIST_FILE = "ParkingApp/ParkingApp-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakardo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = ParkingApp;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		061F176418934437003A0C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4F120BBC0F0E16BFDDC03D6 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkingApp/ParkingApp-Prefix.pch";
+				INFOPLIST_FILE = "ParkingApp/ParkingApp-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakardo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = ParkingApp;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		061F176618934437003A0C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HotelCompass.app/HotelCompass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HotelCompass/ParkingApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HotelCompassTests/ParkingAppTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakardo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = ParkingApp;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		061F176718934437003A0C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HotelCompass.app/HotelCompass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HotelCompass/ParkingApp-Prefix.pch";
+				INFOPLIST_FILE = "HotelCompassTests/ParkingAppTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nakardo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = ParkingApp;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		061F172B18934437003A0C14 /* Build configuration list for PBXProject "ParkingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061F176018934437003A0C14 /* Debug */,
+				061F176118934437003A0C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		061F176218934437003A0C14 /* Build configuration list for PBXNativeTarget "ParkingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061F176318934437003A0C14 /* Debug */,
+				061F176418934437003A0C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		061F176518934437003A0C14 /* Build configuration list for PBXNativeTarget "ParkingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061F176618934437003A0C14 /* Debug */,
+				061F176718934437003A0C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 061F172818934437003A0C14 /* Project object */;
+}
