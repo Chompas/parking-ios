@@ -9,6 +9,7 @@
 #import "BookingViewController.h"
 #import "QRCodeGenerator.h"
 #import <Mapkit/Mapkit.h>
+#import "ProgressViewController.h"
 
 @implementation BookingViewController
 
@@ -65,6 +66,21 @@
     [mapItem setName:_parking.name];
     // Pass the map item to the Maps app
     [mapItem openInMapsWithLaunchOptions:@{MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving}];
+}
+
+- (IBAction)showProgress:(id)sender {
+    [self performSegueWithIdentifier: @"progressSegue" sender: self];
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"progressSegue"]){
+        ProgressViewController *vc = [segue destinationViewController];
+        [vc setParking:_parking];
+    }
+    
 }
 
 @end

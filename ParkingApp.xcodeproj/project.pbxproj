@@ -41,6 +41,7 @@
 		A8F4518B1D1892A700EED56B /* BookingService.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F4518A1D1892A700EED56B /* BookingService.m */; };
 		A8F4518E1D189B7B00EED56B /* BookingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F4518D1D189B7B00EED56B /* BookingViewController.m */; };
 		A8F451901D18ADA800EED56B /* map-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F4518F1D18ADA800EED56B /* map-icon@2x.png */; };
+		A8F451931D18B35300EED56B /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F451921D18B35300EED56B /* ProgressViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		A8F4518C1D189B7B00EED56B /* BookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingViewController.h; sourceTree = "<group>"; };
 		A8F4518D1D189B7B00EED56B /* BookingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingViewController.m; sourceTree = "<group>"; };
 		A8F4518F1D18ADA800EED56B /* map-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-icon@2x.png"; sourceTree = "<group>"; };
+		A8F451911D18B35300EED56B /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		A8F451921D18B35300EED56B /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
 		E4F120BBC0F0E16BFDDC03D6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +235,8 @@
 				06336BA618AD47DD001CA042 /* DetailViewController.m */,
 				A8F4518C1D189B7B00EED56B /* BookingViewController.h */,
 				A8F4518D1D189B7B00EED56B /* BookingViewController.m */,
+				A8F451911D18B35300EED56B /* ProgressViewController.h */,
+				A8F451921D18B35300EED56B /* ProgressViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -454,6 +459,7 @@
 				A8F4518B1D1892A700EED56B /* BookingService.m in Sources */,
 				A8D852C61D184573004B287D /* AvailableParkings.m in Sources */,
 				A8D852C91D1845BE004B287D /* Parking.m in Sources */,
+				A8F451931D18B35300EED56B /* ProgressViewController.m in Sources */,
 				A8F4518E1D189B7B00EED56B /* BookingViewController.m in Sources */,
 				061F176D1893473C003A0C14 /* CompassView.m in Sources */,
 				060F521B18AF0905004FC603 /* NyanView.m in Sources */,
