@@ -33,6 +33,7 @@
 		069F16ED18957B8C00ED0E4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069F16EC18957B8C00ED0E4A /* CoreLocation.framework */; };
 		06E88B0618AABF560060500F /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E88B0518AABF560060500F /* ColorUtils.m */; };
 		9EE3051FFC3447E6AD1E89F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA1D4B22774FC19883C323 /* libPods.a */; };
+		A84BB6651D300EC600FFE096 /* Booking.m in Sources */ = {isa = PBXBuildFile; fileRef = A84BB6641D300EC600FFE096 /* Booking.m */; };
 		A8D852C31D18411C004B287D /* ParkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D852C21D18411C004B287D /* ParkingService.m */; };
 		A8D852C61D184573004B287D /* AvailableParkings.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D852C51D184573004B287D /* AvailableParkings.m */; };
 		A8D852C91D1845BE004B287D /* Parking.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D852C81D1845BE004B287D /* Parking.m */; };
@@ -92,6 +93,8 @@
 		06E88B0518AABF560060500F /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ColorUtils.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3DDA1D4B22774FC19883C323 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C0CC31FC03D557A4439201 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A84BB6631D300EC600FFE096 /* Booking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Booking.h; sourceTree = "<group>"; };
+		A84BB6641D300EC600FFE096 /* Booking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Booking.m; sourceTree = "<group>"; };
 		A8D852C11D18411C004B287D /* ParkingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ParkingService.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A8D852C21D18411C004B287D /* ParkingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ParkingService.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A8D852C41D184573004B287D /* AvailableParkings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableParkings.h; sourceTree = "<group>"; };
@@ -274,6 +277,8 @@
 				A8D852C51D184573004B287D /* AvailableParkings.m */,
 				A8D852C71D1845BE004B287D /* Parking.h */,
 				A8D852C81D1845BE004B287D /* Parking.m */,
+				A84BB6631D300EC600FFE096 /* Booking.h */,
+				A84BB6641D300EC600FFE096 /* Booking.m */,
 			);
 			name = dto;
 			sourceTree = "<group>";
@@ -462,6 +467,7 @@
 				A8F451931D18B35300EED56B /* ProgressViewController.m in Sources */,
 				A8F4518E1D189B7B00EED56B /* BookingViewController.m in Sources */,
 				061F176D1893473C003A0C14 /* CompassView.m in Sources */,
+				A84BB6651D300EC600FFE096 /* Booking.m in Sources */,
 				060F521B18AF0905004FC603 /* NyanView.m in Sources */,
 				06336BA718AD47DD001CA042 /* DetailViewController.m in Sources */,
 			);

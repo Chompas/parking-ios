@@ -8,11 +8,12 @@
 
 #import <AFNetworking/AFNetworking.h>
 #import "Parking.h"
+#import "Booking.h"
 
 @protocol BookingServiceDelegate <NSObject>
 
 @required
-- (void)didBookParking:(Parking *)parking;
+- (void)didBookParking:(Parking *)parking withBooking:(Booking *)booking;
 - (void)didFailBookingParking;
 @end
 

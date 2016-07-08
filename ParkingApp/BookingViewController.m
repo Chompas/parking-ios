@@ -21,7 +21,8 @@
     
     _nameLabel.text = _parking.name;
     _addressLabel.text = _parking.address;
-    _QRImage.image = [QRCodeGenerator qrImageForString:_parking._id imageSize:_QRImage.bounds.size.width];
+    _QRImage.image = [QRCodeGenerator qrImageForString:_booking.code imageSize:_QRImage.bounds.size.width];
+    _reservationCodeLabel.text = [NSString stringWithFormat:@"Código: %@", _booking.code];
 }
 
 #pragma mark - IBActions

@@ -105,10 +105,11 @@
 
 #pragma mark - ParkingAvailabilityServiceDelegate
 
-- (void)didBookParking:(Parking *)parking
+- (void)didBookParking:(Parking *)parking withBooking:(Booking *)booking
 {
     _parking.occupancy--;
     __occupancyLabel.text = [NSString stringWithFormat:@"%i", _parking.occupancy];
+    _booking = booking;
     
     [self performSegueWithIdentifier: @"bookSegue" sender: self];
 }
@@ -129,6 +130,7 @@
     if([[segue identifier] isEqualToString:@"bookSegue"]){
         BookingViewController *vc = [segue destinationViewController];
         [vc setParking:_parking];
+        [vc setBooking:_booking];
     }
     
 }

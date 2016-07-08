@@ -172,7 +172,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La reserva se ha realizado con éxito. Mostrá este código en la entrada del establecimiento." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW4-x1-Vmi">
-                                <rect key="frame" x="16" y="372" width="288" height="31.5"/>
+                                <rect key="frame" x="16" y="392" width="288" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -188,8 +188,8 @@
                                     <action selector="mapDirections:" destination="QWP-42-DoP" eventType="touchUpInside" id="Xiu-Tc-Q0v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvo-mg-l5e">
-                                <rect key="frame" x="136" y="441" width="62" height="46.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvo-mg-l5e">
+                                <rect key="frame" x="129" y="441" width="62" height="46.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46.5" id="VNC-MQ-qNq"/>
                                     <constraint firstAttribute="width" constant="62" id="fB5-yn-Hn3"/>
@@ -199,6 +199,12 @@
                                     <action selector="showProgress:" destination="QWP-42-DoP" eventType="touchUpInside" id="ZPS-cZ-eiw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fjiaosdfu89udf89ajsd8jas8df" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcb-bw-XPe">
+                                <rect key="frame" x="73.5" y="370" width="174" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -207,6 +213,8 @@
                             <constraint firstItem="OMB-Rs-x64" firstAttribute="top" secondItem="QPK-c4-Rvz" secondAttribute="bottom" constant="20" id="Efz-VI-adF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OMB-Rs-x64" secondAttribute="trailing" constant="-24" id="He4-Oe-c2U"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pW4-x1-Vmi" secondAttribute="trailing" id="HsM-rt-be8"/>
+                            <constraint firstItem="gcb-bw-XPe" firstAttribute="centerX" secondItem="WsJ-HC-pIS" secondAttribute="centerX" id="IB1-oC-2cq"/>
+                            <constraint firstItem="gcb-bw-XPe" firstAttribute="top" secondItem="xgy-fB-4Gg" secondAttribute="bottom" constant="8" id="MQ0-ow-nxn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xgy-fB-4Gg" secondAttribute="trailing" id="OOK-Ek-h0V"/>
                             <constraint firstItem="oBT-HE-NsJ" firstAttribute="leading" secondItem="WsJ-HC-pIS" secondAttribute="leadingMargin" id="SkH-Ql-Sgo"/>
                             <constraint firstItem="xgy-fB-4Gg" firstAttribute="centerX" secondItem="WsJ-HC-pIS" secondAttribute="centerX" id="VaQ-hh-8pG"/>
@@ -218,7 +226,7 @@
                             <constraint firstItem="xgy-fB-4Gg" firstAttribute="leading" secondItem="WsJ-HC-pIS" secondAttribute="leadingMargin" id="gqR-wP-gpt"/>
                             <constraint firstItem="OMB-Rs-x64" firstAttribute="top" secondItem="Pvo-mg-l5e" secondAttribute="bottom" constant="20.5" id="jtH-II-rQr"/>
                             <constraint firstItem="QPK-c4-Rvz" firstAttribute="trailing" secondItem="WsJ-HC-pIS" secondAttribute="trailingMargin" constant="-20" id="n5P-wi-qOZ"/>
-                            <constraint firstItem="pW4-x1-Vmi" firstAttribute="top" secondItem="xgy-fB-4Gg" secondAttribute="bottom" constant="10" id="psn-gb-No2"/>
+                            <constraint firstItem="pW4-x1-Vmi" firstAttribute="top" secondItem="gcb-bw-XPe" secondAttribute="bottom" constant="6" id="rSC-ig-z53"/>
                             <constraint firstItem="xgy-fB-4Gg" firstAttribute="top" secondItem="bK8-3k-EbI" secondAttribute="bottom" constant="10" id="rXr-a5-DOE"/>
                         </constraints>
                     </view>
@@ -234,6 +242,7 @@
                         <outlet property="QRImage" destination="xgy-fB-4Gg" id="jD0-Q8-ZPu"/>
                         <outlet property="addressLabel" destination="A8c-Lg-zOE" id="sXS-sg-YKy"/>
                         <outlet property="nameLabel" destination="oBT-HE-NsJ" id="dW3-Vi-eft"/>
+                        <outlet property="reservationCodeLabel" destination="gcb-bw-XPe" id="wMs-hQ-wjG"/>
                         <segue destination="l5b-JX-T5Q" kind="modal" identifier="progressSegue" modalTransitionStyle="partialCurl" id="uR7-0v-KO0"/>
                     </connections>
                 </viewController>
@@ -268,8 +277,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Importe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQm-hX-nC4">
-                                        <rect key="frame" x="135" y="214" width="59" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Importe Estimado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQm-hX-nC4">
+                                        <rect key="frame" x="98" y="214" width="133.5" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>

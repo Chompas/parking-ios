@@ -7,6 +7,7 @@
 //
 
 #import "BookingService.h"
+#import "Booking.h"
 
 static NSString * const kBaseURL = @"http://localhost:3000";
 
@@ -39,8 +40,9 @@ static NSString * const kBaseURL = @"http://localhost:3000";
     
     void (^success)(AFHTTPRequestOperation *operation, id responseObject) =
     ^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Book");
-        [self.delegate didBookParking:parking];
+        NSError *error;
+        Booking *booking = [[Booking alloc] initWithDictionary:responseObject[@"booking"] error:&error];
+        [self.delegate didBookParking:parking withBooking:booking];
     };
     
     void (^failure)(AFHTTPRequestOperation *operation, NSError *error) =

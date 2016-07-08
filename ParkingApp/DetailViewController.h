@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "Parking.h"
+#import "Booking.h"
 #import "BookingService.h"
 
 @interface DetailViewController : UIViewController<CLLocationManagerDelegate, BookingServiceDelegate>
 
 @property(nonatomic, weak) CLLocation *location;
 @property(nonatomic, strong) Parking *parking;
+@property(nonatomic, strong) Booking *booking;
 @property(nonatomic, strong) UIColor *primaryColor;
 @property(nonatomic, strong) UIColor *secondaryColor;
 
